@@ -4,7 +4,7 @@ metadata:
   name: java-grpc-connector-template
 spec:
   prereqs:
-    repo: 'https://github.ibm.com/katamari/java-grpc-connector-template'
+    repo: 'https://github.com/yangkwang/cp4waiops-connectors-java-template'
     branch: main
     authSecret:
       name: test-utilities-github-token
