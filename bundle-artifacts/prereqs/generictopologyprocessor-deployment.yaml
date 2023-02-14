@@ -44,7 +44,7 @@ spec:
             allowPrivilegeEscalation: false
           imagePullPolicy: Always
           terminationMessagePolicy: File
-          image: instana-topology 
+          image: generic-topology-processor 
       restartPolicy: Always
       serviceAccountName: generic-topology-processor
       schedulerName: default-scheduler
@@ -142,7 +142,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: CONNECTOR_CONFIGURATION_CR_NAME
-              value: 'instana-topology'              
+              value: 'generic-topology-processor'              
             - name: TOPOLOGY_SERVICE_HOST
               value: aiops-topology-topology
             - name: TOPOLOGY_SERVICE_PORT
